@@ -19,7 +19,7 @@ public class BusinessException extends Exception {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("异常代码：[" + this.code + "];\t").append("异常消息：[" + this.message + "]");
+        builder.append("异常代码：[" + this.code + "] ").append("异常消息：[" + this.message + "]");
 
         return builder.toString();
     }
