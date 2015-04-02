@@ -40,4 +40,18 @@ public class ErrorMessage {
 
         return DELETE_ERROR + " 方法名：<" + methodName + "> 参数：" + param;
     }
+
+    public static String getClientMessage(String errorCode) {
+        if (ErrorCode.CREATE_ERROR.equals(errorCode)) {
+            return CREATE_ERROR;
+        } else if (ErrorCode.READ_ERROR.equals(errorCode)) {
+            return READ_ERROR;
+        } else if (ErrorCode.UPDATE_ERROR.equals(errorCode)) {
+            return UPDATE_ERROR;
+        } else if (ErrorCode.DELETE_ERROR.equals(errorCode)) {
+            return DELETE_ERROR;
+        } else {
+            return null;
+        }
+    }
 }

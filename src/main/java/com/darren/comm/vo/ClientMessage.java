@@ -13,6 +13,10 @@ public class ClientMessage {
      * 跳转目标名称
      */
     private String target;
+    /**
+     * 错误码
+     */
+    private String errorCode;
 
     public String getMessage() {
         return message;
@@ -36,6 +40,14 @@ public class ClientMessage {
 
     public void setTarget(String target) {
         this.target = target;
+    }
+
+    public String getErrorCode() {
+        return errorCode;
+    }
+
+    public void setErrorCode(String errorCode) {
+        this.errorCode = errorCode;
     }
 
 }
