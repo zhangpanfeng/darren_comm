@@ -1,5 +1,11 @@
 package com.darren.comm.vo;
 
+/**
+ * 客户端的消息类
+ * 
+ * @author zhangpanfeng
+ * 
+ */
 public class ClientMessage {
     /**
      * 消息
